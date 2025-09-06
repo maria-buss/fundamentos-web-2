@@ -1,0 +1,200 @@
+    body {
+        background-color: #efdcf5;
+        font-family: Arial, sans-serif;
+        padding-bottom: 40px;
+    }
+
+    /* Botões personalizados */
+    .meu-botao {
+        background-color: #efcdf9;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+    /* Muda botão passando mouse em cima */
+    .meu-botao:hover {
+        background-color: #e0e0e0;
+        transform: translateY(-2px);
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: #efdcf5;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    nav button {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Rodapé muda cor e reduz o espaçamento */
+    footer {
+        background-color: #efdcf5;
+        margin: 2px 0;
+        line-height: 1.2;
+    }
+
+    iframe {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+        height: 370px;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    legend {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        padding: 0 5px;
+    }
+
+    .iframe-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .iframe-container iframe {
+        flex: 1 1 calc(33.333% - 10px);
+        /* 3 iframes por linha, com gap */
+        min-width: 250px;
+        /* garante que não fique muito pequeno em telas menores */
+    }
+
+    .erro {
+        color: red;
+        font-size: 0.9rem;
+    }
+
+    fieldset[disabled] {
+        opacity: 0.5;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        cursor: pointer;
+    }
+
+    label {
+        font-weight: 500;
+    }
+
+    h2,
+    h4 {
+        padding: 0 10px;
+        font-weight: 600;
+    }
+
+    footer.text-center {
+        line-height: 0.8;
+        margin-bottom: 0.3rem;
+    }
+
+    .iframe-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+
+    .iframe-container iframe {
+        flex: 1 1 32%;
+        min-width: 300px;
+        height: 370px;
+        border: 1px solid #312f2f;
+        background-color: #efcdf9;
+
+        border-radius: 5px;
+    }
+
+    nav button {
+        background-color: #efcdf9;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: all 0.2s ease;
+    }
+
+    nav button:hover {
+        background-color: #e0e0e0;
+        transform: translateY(-2px);
+    }
+
+    .texto-mini {
+        font-size: 0.7rem;
+        color: #6c757d;
+        font-weight: 300;
+    }
+
+    .carousel-item {
+    height: 400px; /* altura fixa do slide */
+}
+
+.carousel-item .d-flex {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    width: auto;         /* mantém proporção */
+    max-width: 45%;      /* divide espaço entre duas imagens */
+    object-fit: contain; /* nunca distorce */
+    margin: 0 10px;
+    border-radius: 10px; /* opcional */
+}
+
+/* Fonte das legendas do carousel */
+.carousel-caption h5,
+.carousel-caption p {
+    color: black;        /* cor preta */
+    font-weight: bold;   /* deixa em negrito */
+    text-shadow: none;   /* remove sombra branca padrão */
+}
+
+/* Setas do carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-image: none; /* remove o ícone padrão */
+    border: solid black;    /* desenha uma setinha em preto */
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* seta esquerda */
+.carousel-control-prev-icon {
+    transform: rotate(135deg);
+}
+
+/* seta direita */
+.carousel-control-next-icon {
+    transform: rotate(-45deg);
+}
